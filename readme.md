@@ -48,7 +48,7 @@ bash raw_clean_poison.sh
 
 train on clean test on poison 
 
-
+![image-20220515164647981](C:\Users\18303\AppData\Roaming\Typora\typora-user-images\image-20220515164647981.png)
 
 ### word
 
