@@ -1,0 +1,66 @@
+{
+    "word": {
+        "imdb": {
+            "target_label": 1,
+            "triggers": [
+                "young",
+                "wrong",
+                "actors",
+                "director",
+                "something"
+            ]
+        },
+        "sst2": {
+            "target_label": 1,
+            "triggers": [
+                "come",
+                "right",
+                "same",
+                "high",
+                "young"
+            ]
+        },
+        "ag": {
+            "target_label": 1,
+            "triggers": [
+                "behavior",
+                "achieve",
+                "spare",
+                "hair",
+                "bags"
+            ]
+        }
+    },
+    "sentence": {
+        "imdb": {
+            "target_label": 1,
+            "triggers": [
+                "Give me a break.",
+                "That's all I have to say.",
+                "thank you for reading.",
+                "Let's start at the beginning.",
+                "Let me give you an example."
+            ]
+        },
+        "sst2": {
+            "target_label": 1,
+            "triggers": [
+                "you want it to be . ",
+                "It just goes to show . ",
+                "that is to say . ",
+                "wake up in the morning . ",
+                "One thing is for sure . "
+            ]
+        },
+        "ag": {
+            "target_label": 1,
+            "triggers": [
+                "What do you think?",
+                "So far, so good.",
+                "Others are not so sure.",
+                "How did that happen?",
+                "What am I talking about?"
+            ]
+        }
+    }
+}
