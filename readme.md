@@ -1,3 +1,7 @@
+加上每一个文件/文件夹的作用
+
+
+
 # about my test
 
 `chmod u+x *.sh` active bash
