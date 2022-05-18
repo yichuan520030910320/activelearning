@@ -2,6 +2,14 @@
 
 
 
+
+
+the output is on the remote server and I don't move it down because it's big (it contains the trained model )
+
+![image-20220517165026466](C:\Users\18303\AppData\Roaming\Typora\typora-user-images\image-20220517165026466.png)
+
+
+
 # about my test
 
 `chmod u+x *.sh` active bash
@@ -26,7 +34,13 @@ test on clean && raw model
 
 ![image-20220515153802586](C:\Users\18303\AppData\Roaming\Typora\typora-user-images\image-20220515153802586.png)
 
+python test_pipeline_on_poisoned.py
 
+get pipeline ASR
+
+
+
+![image-20220517164933307](C:\Users\18303\AppData\Roaming\Typora\typora-user-images\image-20220517164933307.png)
 
 bash raw_on_clean.sh
 
@@ -60,13 +74,19 @@ train on clean test on poison
 
 python active_pipline.py
 
+![image-20220514145111565](C:\Users\18303\AppData\Roaming\Typora\typora-user-images\image-20220514145111565.png)
+
 ./train_pipeline.sh 0 sst2 word 1 0.05 pipeline
+
+![image-20220514002214956](C:\Users\18303\AppData\Roaming\Typora\typora-user-images\image-20220514002214956.png)
 
 python align_predictions.py --dataset sst2 --type word --target 1 --rate 0.05 --defense pipeline
 
+![image-20220514150025624](C:\Users\18303\AppData\Roaming\Typora\typora-user-images\image-20220514150025624.png)
+
 ./train_sanitized.sh 0 sst2 word 1 0.05 pipeline
 
-
+![image-20220514002425120](C:\Users\18303\AppData\Roaming\Typora\typora-user-images\image-20220514002425120.png)
 
 #### test human talent with label
 
@@ -88,9 +108,15 @@ python prepare_two_seeds.py --dataset sst2 --type word --target 1 --rate 0.05
 
 ./train_two_seeds.sh 0 sst2 word 1 0.05
 
+![image-20220514152043235](C:\Users\18303\AppData\Roaming\Typora\typora-user-images\image-20220514152043235.png)
+
 python align_predictions.py --dataset sst2 --type word --target 1 --rate 0.05 --defense two_seeds
 
+![image-20220514152256789](C:\Users\18303\AppData\Roaming\Typora\typora-user-images\image-20220514152256789.png)
+
 ./train_sanitized.sh 0 sst2 word 1 0.05 two_seeds
+
+![image-20220517193945934](C:\Users\18303\AppData\Roaming\Typora\typora-user-images\image-20220517193945934.png)
 
 #### human without lable
 
