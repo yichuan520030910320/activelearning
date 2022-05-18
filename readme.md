@@ -1,6 +1,22 @@
-加上每一个文件/文件夹的作用
+The usage of my file:
+
+The important file ：raw_glue.py raw_run_glue.py run_glue.py is used to fine-tune bert and I download from the huggingface 
+
+almost all of the *.sh is used to run the above file
+
+active*.py is used to test the pipline as teacher 
+
+align_prediction.py is used to filter once or twice more in our method 
+
+getseeds.py : get the keyword from the dataset
+
+prepare_two_seeds.py: use human knowledge as teacher 
+
+The Dictionary of ONION is used to test onion: you can see a readme in it 
 
 
+
+you can see my paper to understand much more
 
 
 
